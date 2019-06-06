@@ -3,8 +3,14 @@ package com.tutorialspoint.struts2;
 public class HelloWorldAction {
    private String name;
    private String location;
+   
 
-   public String execute() throws Exception {
+   @Override
+public String toString() {
+	return "HelloWorldAction [name=" + name + ", location=" + location + "]";
+}
+
+public String execute() throws Exception {
       System.out.println("Execute method");
 	   return "success";
    }
